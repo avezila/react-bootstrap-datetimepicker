@@ -4,6 +4,9 @@ import classnames from "classnames";
 import DateTimePicker from "./DateTimePicker.js";
 import Constants from "./Constants.js";
 
+import "moment/src/locale/ru";
+moment.locale("ru")
+
 export default class DateTimeField extends Component {
   static defaultProps = {
     dateTime: moment().format("x"),
